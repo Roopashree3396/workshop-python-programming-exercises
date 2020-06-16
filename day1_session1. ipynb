@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "day1_session1",
+      "provenance": [],
+      "authorship_tag": "ABX9TyP2A6dSNJZXzWdAEhnBEgRM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Roopashree3396/workshop-python-programming-exercises/blob/master/day1_session1.%20ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0hhlntQLJatR",
+        "colab_type": "text"
+      },
+      "source": [
+        "Write a program for finding surface areas of cylinder and cone using function."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-7IZUCTMJCw3",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 84
+        },
+        "outputId": "9fc148b2-5457-4628-fe75-8e306b639f14"
+      },
+      "source": [
+        "import math\n",
+        "def Cylinder(r,h):\n",
+        "  return 2*math.pi*r*r*h\n",
+        "def cone(r,h):\n",
+        "  return (1/3)*math.pi*r*r*h\n",
+        "r=int(input(\"enter r value : \"))\n",
+        "h=int(input(\"enter h value\"))\n",
+        "print(\"surface area of cylinder is : %.2f\"%Cylinder(r,h))\n",
+        "print(\"surface area of cone is : %.2f \"%cone(r,h))\n"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter r value : 58\n",
+            "enter h value26\n",
+            "surface area of cylinder is : 549552.52\n",
+            "surface area of cone is : 91592.09 \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
